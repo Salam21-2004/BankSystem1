@@ -1,5 +1,7 @@
 #pragma once
-
+#pragma once
+#include <iostream>
+using namespace std;
 #include "Validation.h"
 class validation {
 
