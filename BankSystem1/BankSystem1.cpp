@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "Admin.h"
+#include"Person.h"
+#include<string>
 int main()
 {
     cout << "Hello World!\n";
