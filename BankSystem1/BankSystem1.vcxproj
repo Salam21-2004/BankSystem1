@@ -129,12 +129,15 @@
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="BankSystem1.cpp" />
+    <ClCompile Include="Data_sourcle.cpp" />
+    <ClCompile Include="Data_SourcleInterface.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="Data_SourcleInterface.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Validation.h" />
