@@ -25,12 +25,12 @@ class Person
 			this->id = id;
 		}
 		void setName(string name) {
-			if (Validation::validateName(name)) {
+			if (validation::set_name (name)) {
 				this->name = name;
 			}
 		}
-		void setId(string password) {
-			if (Validation::validatePassword(password)) {
+		void setPass(string password) {
+			if (validation::set_password(password)) {
 				this->password = password;
 			}
 		}
