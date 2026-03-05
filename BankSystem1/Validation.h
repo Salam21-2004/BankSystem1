@@ -1,9 +1,10 @@
 #pragma once
-#pragma once
 #include <iostream>
+#include <string>
+#include <cctype>
 using namespace std;
 #include "Validation.h"
-class validation {
+class Validation {
 
 public:
     static bool set_name(string name) {
@@ -11,9 +12,9 @@ public:
             cout << "invalid name length \n";
             return false;
         }
-        for (auto n : name) {
-            if (!isalpha(n)) {
-                cout << "name must contian letters";
+        for (char n : name) {
+            if (!isalpha((unsigned char)n)) {
+                cout << "name must contain letters only\n";
                 return false;
             }
         }
@@ -24,9 +25,9 @@ public:
             cout << "invalid password size \n";
             return false;
         }
-        for (auto p : password) {
-            if (isspace(p)) {
-                cout << "password mustnot contain space";
+        for (char p : password) {
+            if (isspace((unsigned char)p)) {
+                cout << "password must not contain spaces\n";
                 return false;
             }
         }
@@ -34,14 +35,14 @@ public:
     }
     static bool set_balance(double balance) {
         if (balance < 1500) {
-            cout << "balance must be greater 1500";
+            cout << "balance must be >= 1500\n";
             return false;
         }
         return true;
     }
     static bool set_salary(double salary) {
         if (salary < 5000) {
-            cout << "salary must be greater 5000";
+            cout << "salary must be >= 5000\n";
             return false;
         }
         return true;
