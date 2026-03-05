@@ -7,11 +7,11 @@ class Data_SourcleInterface
 {
 public:
 	
-	virtual void Addclint(client& obj) = 0;
+	virtual void Addclint(Client& obj) = 0;
 	virtual void AddEmployee(Employee& obj) = 0;
 	virtual void AddAdmin(Admin& obj) = 0;
 
-	virtual vector<client>getAllclients() = 0;
+	virtual vector<Client>getAllclients() = 0;
 	virtual vector<Employee>getAllEmployee() = 0;
 	virtual vector<Admin>getAllAdmin() = 0;
 	

@@ -8,11 +8,11 @@ protected:
 public:
     Employee() :Person() {
 
-        salary = 0;
+        salary = 5000;
     }
     Employee(int id, string name, string password, double salary) :Person(id, name, password) {
 
-        this->salary = salary;
+        setSalary(salary);
     }
 
 
@@ -25,10 +25,10 @@ public:
 
 
 
-    double getSalary() {
+    double getSalary() const{
         return salary;
     }
-    void display() {
+    void display() const override{
         Person::display();
 
         cout << "Salary: " << salary << endl;
