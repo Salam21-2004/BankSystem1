@@ -60,10 +60,7 @@ public:
             cout << "Cannot transfer, minimum balance is 1500\n";
             return;
         }
-        if (balance - amount < 1500) {
-            cout << "Cannot transfer, minimum balance is 1500\n";
-            return;
-        }
+       
         balance -= amount;
         recipient.balance += amount;
     }
