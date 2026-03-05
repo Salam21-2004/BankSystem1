@@ -1,31 +1,31 @@
 #pragma once
 #include "Person.h"
-class Employee : Person
+class Employee :public Person
 {
 protected:
 
     double salary;
 public:
-    Employee() :person() {
+    Employee() :Person() {
 
-        salary = 0;
+        salary = 5000;
     }
-    Employee(int id, string name, string password, double salary) :person(id, name, password) {
+    Employee(int id, string name, string password, double salary) :Person(id, name, password) {
 
-        setsalary(salary);
+        setSalary(salary);
     }
 
 
 
     void setSalary(double salary) {
-        if (Validation::isValidSalary(salary)) {
+        if (Validation::set_salary(salary)) {
             this->salary = salary;
         }
     }
 
 
 
-    double getSalary() {
+    double getSalary() const{
         return salary;
     }
     void display() {
