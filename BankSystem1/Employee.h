@@ -18,7 +18,7 @@ public:
 
 
     void setSalary(double salary) {
-        if (validation::set_salary(salary)) {
+        if (Validation::set_salary(salary)) {
             this->salary = salary;
         }
     }
