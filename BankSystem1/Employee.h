@@ -6,11 +6,11 @@ protected:
 
     double salary;
 public:
-    Employee() :person() {
+    Employee() :Person() {
 
         salary = 0;
     }
-    Employee(int id, string name, string password, double salary) :person(id, name, password) {
+    Employee(int id, string name, string password, double salary) :Person(id, name, password) {
 
         setsalary(salary);
     }
@@ -29,7 +29,7 @@ public:
         return salary;
     }
     void display() {
-        person::display();
+        Person::display();
 
         cout << "Salary: " << salary << endl;
     }
