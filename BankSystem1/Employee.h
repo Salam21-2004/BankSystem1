@@ -29,7 +29,7 @@ public:
         return salary;
     }
     void display() {
-        person::display();
+        Person::display();
 
         cout << "Salary: " << salary << endl;
     }
