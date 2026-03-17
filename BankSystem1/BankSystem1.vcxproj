@@ -40,10 +40,10 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -136,6 +136,7 @@
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Validation.cpp" />
+    <ClCompile Include="welcome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
@@ -145,6 +146,7 @@
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Validation.h" />
+    <ClInclude Include="welcome.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
