@@ -28,9 +28,9 @@ class Admin : public Employee
 	}
 	void editEmployee(Employee* e, string name, string password, double salary)
 	{
-		e->setName(name);
-		e->setPassword(password);
-		e->setSalary(salary);
+			e->setName(name);
+			e->setPassword(password);
+			e->setSalary(salary);
 	}
 	void listEmployees()
 	{
