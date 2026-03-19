@@ -26,7 +26,7 @@ public:
 
 	static Client parseToClient(string line) {
 		vector<string> parts = split(line);
-		Clinet c;
+		Client c;
 		c.setId(stoi(parts[0]));
 		c.setName((parts[1]));
 		c.setPass((parts[2]));
@@ -40,7 +40,7 @@ public:
 		e.setId(stoi(parts[0]));
 		e.setName((parts[1]));
 		e.setPass((parts[2]));
-		e.setSlary(stod(parts[3]));
+		e.setSalary(stod(parts[3]));
 		return e;
 
 	}
@@ -50,7 +50,7 @@ public:
 		a.setId(stoi(parts[0]));
 		a.setName((parts[1]));
 		a.setPass((parts[2]));
-		a.setSlary(stod(parts[3]));
+		a.setSalary(stod(parts[3]));
 		return a;
 
 	}
