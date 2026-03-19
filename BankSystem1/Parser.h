@@ -23,7 +23,7 @@ class Parser
 		return parts;
 	}
 public:
-	
+
 	static Client parseToClient(string line) {
 		vector<string> parts = split(line);
 		Clinet c;
@@ -54,6 +54,5 @@ public:
 		return a;
 
 	}
-}; 
+};
 
-  

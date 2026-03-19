@@ -134,6 +134,7 @@
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Login_screen.cpp" />
+    <ClCompile Include="Parser.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="TextEmployee.cpp" />
     <ClCompile Include="Validation.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Login_screen.h" />
+    <ClInclude Include="Parser.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="TextEmployee.h" />
     <ClInclude Include="Validation.h" />
