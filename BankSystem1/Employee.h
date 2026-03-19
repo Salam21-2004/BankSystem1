@@ -2,6 +2,8 @@
 #include "Person.h"
 #include "Client.h"
 #include <vector>
+static vector<Client> allClients;
+static vector<Client>::iterator cIt;
 
 static vector<Employee> allEmployees;
 static vector<Employee>::iterator eIt;
@@ -40,34 +42,38 @@ public:
         cout << "Salary: " << salary << endl;
     }
     void addClient(Client& client) {
-        allClient.push_back(client);
+        allClients.push_back(client);
     }
 
     Client* searchClient(int id) {
 
-        for (cIt = allClient.begin(); cIt != allClient.end(); cIt++) {
+        for (cIt = allClients.begin(); cIt != allClients.end(); cIt++) {
             if (cIt->getId() == id) {
                 return &(*cIt);
             }
-            return nullptr;
         }
+        return nullptr;
+
     }
 
     void listClient() {
 
-        for (cIt = allClient.begin(); cIt != allClient.end(); cIt++) {
+        for (cIt = allClients.begin(); cIt != allClients.end(); cIt++) {
             cIt->display();
         }
 
 
     }
 
-    void editClient(Client* c, string name, string password, double balance) {
-        c->setName(name);
-        c->setPass(password);
-        c->setBalance(balance);
+    void editClient(int id, string name, string password, double balance) {
 
+        Client* c = searchClient(id);
 
+        if (c != nullptr) {
+            c->setName(name);
+            c->setPass(password);
+            c->setBalance(balance);
+        }
     }
 
 

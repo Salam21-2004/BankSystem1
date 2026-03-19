@@ -28,11 +28,13 @@ class Admin : public Employee
 	}
 	void editEmployee(Employee* e, string name, string password, double salary)
 	{
+		if (e != nullptr) {
 			e->setName(name);
-			e->setPassword(password);
+			e->setPass(password);
 			e->setSalary(salary);
+		}
 	}
-	void listEmployees()
+	void listEmployee()
 	{
 		for (int i = 0; i < allEmployees.size(); i++)
 		{
