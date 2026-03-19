@@ -128,13 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
-    <ClCompile Include="AdminManger.cpp" />
     <ClCompile Include="BankSystem1.cpp" />
     <ClCompile Include="Client.cpp" />
-    <ClCompile Include="Data_sourcle.cpp" />
-    <ClCompile Include="Data_SourcleInterface.cpp" />
+    <ClCompile Include="DataSourceInterface.cpp" />
     <ClCompile Include="Employee.cpp" />
-    <ClCompile Include="EmployeeManager.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Login_screen.cpp" />
     <ClCompile Include="Person.cpp" />
@@ -144,11 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
-    <ClInclude Include="AdminManger.h" />
     <ClInclude Include="Client.h" />
-    <ClInclude Include="Data_SourcleInterface.h" />
+    <ClInclude Include="DataSourceInterface.h" />
     <ClInclude Include="Employee.h" />
-    <ClInclude Include="EmployeeManager.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Login_screen.h" />
     <ClInclude Include="Person.h" />

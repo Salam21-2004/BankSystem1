@@ -60,9 +60,8 @@ public:
             cout << "Cannot transfer, minimum balance is 1500\n";
             return;
         }
-       
-        balance -= amount;
-        recipient.balance += amount;
+        withdraw(amount);          
+        recipient.deposit(amount);
     }
 
     void checkBalance() const {
