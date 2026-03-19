@@ -71,3 +71,14 @@ int main() {
     cout << "\n=== Phase 1 Test End ===\n";
     return 0;
 }
+#include <vector>
+#include"Person.h"
+#include"Admin.h"
+#include<string>
+#include <sstream>
+#include <fstream>
+using namespace std;
+int main()
+{
+    cout << "Hello World!\n";
+}

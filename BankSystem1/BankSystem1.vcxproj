@@ -133,7 +133,9 @@
     <ClCompile Include="Data_sourcle.cpp" />
     <ClCompile Include="Data_SourcleInterface.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="TextEmployee.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,7 +143,9 @@
     <ClInclude Include="Client.h" />
     <ClInclude Include="Data_SourcleInterface.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="TextEmployee.h" />
     <ClInclude Include="Validation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
