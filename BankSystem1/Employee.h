@@ -2,6 +2,10 @@
 #include "Person.h"
 #include "Client.h"
 #include <vector>
+
+static vector<Employee> allEmployees;
+static vector<Employee>::iterator eIt;
+
 class Employee :public Person
 {
 protected:
@@ -68,8 +72,5 @@ public:
 
 
 };
-static vector<Employee> allEmployees;
-static vector<Employee>::iterator eIt;
-
 
 

@@ -26,10 +26,10 @@ class Admin : public Employee
 		}
 		return nullptr;
 	}
-	void editEmployee(Employee* e , string name, string password, double salary)
+	void editEmployee(Employee* e, string name, string password, double salary)
 	{
 			e->setName(name);
-			e->setPass(password);
+			e->setPassword(password);
 			e->setSalary(salary);
 	}
 	void listEmployees()

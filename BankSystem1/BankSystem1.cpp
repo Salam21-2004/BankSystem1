@@ -77,6 +77,8 @@ int main() {
 #include<string>
 #include <sstream>
 #include <fstream>
+#include "FilesHelper.h"
+#include "AdminManger.h"
 using namespace std;
 int main()
 {

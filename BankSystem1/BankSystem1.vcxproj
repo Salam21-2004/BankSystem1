@@ -40,10 +40,10 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -128,25 +128,33 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="AdminManger.cpp" />
     <ClCompile Include="BankSystem1.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Data_sourcle.cpp" />
     <ClCompile Include="Data_SourcleInterface.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="EmployeeManager.cpp" />
     <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="Login_screen.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="TextEmployee.cpp" />
     <ClCompile Include="Validation.cpp" />
+    <ClCompile Include="welcome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="AdminManger.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Data_SourcleInterface.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="EmployeeManager.h" />
     <ClInclude Include="FileManager.h" />
+    <ClInclude Include="Login_screen.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="TextEmployee.h" />
     <ClInclude Include="Validation.h" />
+    <ClInclude Include="welcome.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
